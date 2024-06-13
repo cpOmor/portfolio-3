@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+    @apply text-3xl font-semibold
+}
+
+h2 {
+    @apply text-2xl font-semibold
+}
+
+Link {
+  @apply cursor-pointer
+}
+
+input{ @apply focus:outline-none}
+
+ul.slick-dots li button {
+    background-color: #D9D9D9; 
+    color: #fff; 
+    border: none; 
+    /* border-radius: 50%;  */
+    border-radius: 16px;
+    width: 25px; 
+    height: 0.3px; 
+    font-size: 15px;
+    cursor: pointer; 
+    text-indent: -9999px; 
+   
+
+  } 
+
+  
+  ul.slick-dots li.slick-active button {
+    background-color: #28163B; 
+  }
+
+
+
+ .bg-1{
+  background-image: url('../assets/campaign-cover-countdown.jpg');
+ }
