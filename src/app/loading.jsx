@@ -1,12 +1,8 @@
-// import LoadingAction from "@/components/shared/LoadingAction/LoadingAction"
-
-const Loading = () => {
+const LoadingPage = () => {
   return (
-    <div>
-      {/* <LoadingAction/> */}
-      <h1>Loading...</h1>
-    </div>
-  )
-}
-
-export default Loading
+    <>
+      <div> This is a loading </div>
+    </>
+  );
+};
+export default LoadingPage;
