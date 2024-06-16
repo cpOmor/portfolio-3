@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <Container className="!max-w-[1100px]">
         <div className="flex justify-between items-center h-screen">
-          <div className=" text-white ">
+          <div className=" text-white">
             {" "}
             <duv md={7} className="home-header">
               <h1 className="text-[2.4rem]">
@@ -21,7 +21,7 @@ const Hero = () => {
               </h1>
 
               <h1 className="text-[2.4rem]">
-                I'M
+                {`I'M`}
                 <strong className="text-[#c55cee]"> Omar Faruk</strong>
               </h1>
 
