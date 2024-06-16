@@ -1,0 +1,13 @@
+
+
+.heroBg {
+     background: url("../../../../../assists/home-bg.jpg");
+    
+     
+}
+
+.heroBg {
+    @apply bg-cover opacity-10 absolute top-0  bottom-0 -z-40  w-full ;
+}
+
+  
