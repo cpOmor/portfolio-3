@@ -14,12 +14,12 @@ const Type = () => {
           "PERN Stack Developer",
           "Open Source Contributor",
         ]}
-        loop={5}
+        loop={1000000000}
         cursor
         cursorStyle="_"
-        typeSpeed={70}
-        deleteSpeed={50}
-        delaySpeed={1000}
+        typeSpeed={120}
+        deleteSpeed={20}
+        delaySpeed={2000}
       />
     </>
   );

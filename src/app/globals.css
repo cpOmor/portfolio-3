@@ -13,6 +13,9 @@ body {
   @apply text-white
 }
 
+h1{
+  @apply text-[2.4rem] font-bold 
+}
 
 /* --------- */
 /*Scrollbar   */
@@ -73,4 +76,32 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50% { transform: translate(-50%, -50%) scale(1.5); }
+}
+
+.sun-loader {
+  @apply w-6 h-6 rounded-full relative text-[#c55cee];
+  animation: rotate 2.5s linear infinite;
+}
+
+.sun-loader::before,
+.sun-loader::after {
+  content: '';
+  @apply absolute top-1/2 left-1/2 w-12 h-12 rounded-full;
+  transform: translate(-50%, -50%);
+  animation: pulse 1.5s linear infinite;
+}
+
+.sun-loader::after {
+  animation-delay: 0.75s;
 }

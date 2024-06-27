@@ -34,9 +34,14 @@ const Navbar = () => {
 
   return (
     <Container>
-      <nav  expanded={expand} className={ "sticky z-50  shadow-md  py-4 top-0" }>
+      <nav expanded={expand} className={"sticky z-50  shadow-md  py-4 top-0"}>
         <div className=" mx-auto flex justify-between items-center w-full">
-          <div className="text-[#c55cee] text-lg font-bold ">Omar Faruk</div>
+          <Link
+            href="./"
+            className="text-[#c55cee] text-lg font-Exo font-bold  cursor-pointer"
+          >
+            OMAR FARUK
+          </Link>
           <div className="hidden md:flex space-x-6">
             <Link
               href="#"
@@ -60,7 +65,7 @@ const Navbar = () => {
               <AiOutlineFundProjectionScreen /> <span> Projects</span>
             </Link>
             <Link
-              href="#resume"
+              href="resume"
               onClick={() => updateExpanded(false)}
               className="text-white hover:text-gray-300 flex items-center gap-2"
             >
